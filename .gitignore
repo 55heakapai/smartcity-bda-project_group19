@@ -1,0 +1,60 @@
+# Node
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+frontend/build/
+dist/
+
+# Environment
+.env
+.env.local
+.env.production
+backend/.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+
+# ML model binaries (large files)
+ml/models/saved/*.pkl
+ml/models/saved/*.pt
+ml/models/saved/*.json
+ml/models/saved/*.h5
+
+# Logs
+logs/
+*.log
+backend/logs/
+
+# Data (generated files — use scripts to regenerate)
+data/sample/waste_sample_generated.json
+data/sample/traffic_sample_generated.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Docker volumes
+.docker/
+
+# Spark checkpoints
+/tmp/smartcity_checkpoints/
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb

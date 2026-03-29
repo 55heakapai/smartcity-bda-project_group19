@@ -1,0 +1,12 @@
+{
+  "name": "smartcity-kafka",
+  "version": "1.0.0",
+  "description": "Kafka producers and consumers for Smart City BDA",
+  "scripts": {
+    "producer": "node producers/smart_city_producer.js",
+    "consumer:waste": "node consumers/waste_consumer.js"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4"
+  }
+}

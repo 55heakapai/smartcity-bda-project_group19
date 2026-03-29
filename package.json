@@ -1,0 +1,17 @@
+{
+  "name": "smartcity-bda-group19",
+  "version": "1.0.0",
+  "description": "Smart City Data Analytics - Big Data Analytics Project | Group 19 | Roll 55,56,57",
+  "scripts": {
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm start",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "simulate:kafka": "node kafka/producers/smart_city_producer.js",
+    "simulate:sensors": "python3 scripts/simulation/sensor_simulator.py",
+    "setup": "bash scripts/setup/setup.sh"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

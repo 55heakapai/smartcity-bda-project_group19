@@ -1,0 +1,60 @@
+{
+  "schemas": {
+    "waste_sensor_event": {
+      "description": "IoT ultrasonic bin fill-level sensor event",
+      "fields": {
+        "eventType": "string — WASTE_BIN_UPDATE",
+        "binId": "string — e.g. BIN-001",
+        "zone": "string — city ward/zone name",
+        "fillLevel": "double — 0.0 to 100.0 (% capacity)",
+        "weight": "double — kg (load cell sensor)",
+        "temperature": "double — °C (ambient temperature sensor)",
+        "batteryLevel": "integer — 0 to 100 (IoT device battery %)",
+        "lat": "double — GPS latitude",
+        "lng": "double — GPS longitude",
+        "timestamp": "ISO 8601 string",
+        "sensorId": "string — unique sensor hardware ID"
+      },
+      "kafka_topic": "smartcity.waste.sensors",
+      "hdfs_path": "hdfs:///smartcity/waste/parquet/",
+      "partition_key": "event_date (YYYY-MM-DD)"
+    },
+    "traffic_sensor_event": {
+      "description": "CCTV + in-road loop detector combined event",
+      "fields": {
+        "eventType": "string — TRAFFIC_SENSOR_UPDATE",
+        "intersectionId": "string — e.g. INT-001",
+        "intersectionName": "string — human-readable name",
+        "vehicleCount": "integer — vehicles counted in last 60 seconds",
+        "avgSpeed": "double — km/h average speed",
+        "signalPhase": "string — GREEN | RED | YELLOW",
+        "congestionLevel": "string — LOW | MEDIUM | HIGH | CRITICAL",
+        "waitTime": "integer — seconds average vehicle wait",
+        "lat": "double", "lng": "double",
+        "timestamp": "ISO 8601 string",
+        "cameraId": "string — CCTV camera ID"
+      },
+      "kafka_topic": "smartcity.traffic.sensors",
+      "hdfs_path": "hdfs:///smartcity/traffic/parquet/"
+    },
+    "energy_meter_event": {
+      "description": "Smart electricity meter reading (AMI - Advanced Metering Infrastructure)",
+      "fields": {
+        "eventType": "string — SMART_METER_READING",
+        "meterId": "string — e.g. METER-0001",
+        "zone": "string — city zone",
+        "currentDemand": "double — kW active power demand",
+        "voltage": "double — Volts RMS",
+        "currentAmp": "double — Amperes RMS",
+        "powerFactor": "double — 0.0 to 1.0",
+        "solarGeneration": "double — kW from rooftop solar",
+        "gridImport": "double — kW imported from grid",
+        "anomalyScore": "double — 0.0 to 1.0 (Isolation Forest score)",
+        "timestamp": "ISO 8601 string",
+        "discoms": "string — Distribution company name"
+      },
+      "kafka_topic": "smartcity.energy.meters",
+      "hdfs_path": "hdfs:///smartcity/energy/parquet/"
+    }
+  }
+}
