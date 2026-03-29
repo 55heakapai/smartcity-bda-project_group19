@@ -1,8 +1,19 @@
-# 🏙️ Smart City Data Analytics — Full BDA Project
+# 🏙️ Smart City Data Analytics — Full-Stack BDA Project
 
-> **Topic 19 | Group 19 | Roll Nos: 55, 56, 57**
-> Big Data Analytics — Complete Full-Stack Project
+> **Topic 19-Smart city data analytics (waste, traffic, energy) | Group 19 | Roll Nos: 55, 56, 57**
+> 
 > Domains: **Waste Management · Traffic Management · Energy Management**
+---
+
+## 👥 Team
+
+| Roll No | Name |
+|---------|------|
+| 55 | Hea Kapai |
+| 56 | Ishika Mokati |
+| 57 | Ishwari Moroney |
+
+**Course:** Big Data Analytics | **AY:** 2024–25
 
 ---
 
@@ -494,18 +505,6 @@ git push -u origin main
 | Frontend | React.js + Recharts | Interactive dashboard |
 | Database | MongoDB (optional) | Persistent storage |
 | Containers | Docker + Compose | Easy deployment |
-
----
-
-## 👥 Team
-
-| Roll No | Name |
-|---------|------|
-| 55 | Member 1 |
-| 56 | Member 2 |
-| 57 | Member 3 |
-
-**Course:** Big Data Analytics | **Topic:** 19 — Smart City Data Analytics | **AY:** 2024–25
 
 ---
 
