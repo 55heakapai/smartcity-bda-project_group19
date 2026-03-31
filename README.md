@@ -22,38 +22,38 @@
 ```
 smartcity-bda/
 │
-├── 📦 backend/                    Node.js + Express REST API + Socket.IO
+├──  backend/                    Node.js + Express REST API + Socket.IO
 │   ├── server.js                  Main server entry point
 │   ├── routes/                    REST API routes (waste, traffic, energy)
 │   └── utils/                     Data simulator, ML predictor, logger
 │
-├── 🌐 frontend/                   React.js Dashboard
+├──  frontend/                   React.js Dashboard
 │   └── src/
 │       ├── pages/                 Dashboard, Waste, Traffic, Energy, Analytics, ML
 │       ├── components/shared/     Reusable UI components
 │       └── hooks/                 Custom API data hooks
 │
-├── 🔴 kafka/                      Apache Kafka producers & consumers
+├──  kafka/                      Apache Kafka producers & consumers
 │   ├── producers/                 IoT sensor data producers
 │   └── consumers/                 Domain-specific consumers
 │
-├── ⚡ spark/                      Apache Spark jobs
+├──  spark/                      Apache Spark jobs
 │   ├── streaming/                 Real-time Spark Streaming (Kafka → Spark)
 │   └── batch/                     Nightly historical analysis jobs
 │
-├── 🗄️ hadoop/                     Hadoop ecosystem
+├──  hadoop/                     Hadoop ecosystem
 │   ├── mapreduce/                 Python Hadoop Streaming MapReduce
 │   └── hive/                      HiveQL DDL + analytics queries
 │
-├── 🤖 ml/models/                  Machine Learning models
+├──  ml/models/                  Machine Learning models
 │   ├── waste_overflow_model.py    Random Forest (scikit-learn)
 │   ├── traffic_lstm_model.py      LSTM Neural Network (PyTorch)
 │   └── energy_demand_model.py     XGBoost + Isolation Forest
 │
-├── 📜 scripts/simulation/         IoT sensor data simulator
-├── 📊 data/sample/                Sample JSON sensor data
-├── 🐳 docker-compose.yml          Full stack Docker setup
-└── 📖 README.md                   This file
+├──  scripts/simulation/         IoT sensor data simulator
+├──  data/sample/                Sample JSON sensor data
+├──  docker-compose.yml          Full stack Docker setup
+└──  README.md                   This file
 ```
 
 ---
