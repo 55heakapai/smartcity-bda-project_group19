@@ -22,7 +22,7 @@ const alertRoutes = require('./routes/alerts');
 const app = express();
 const server = http.createServer(app);
 
-// ─── Socket.IO setup ─────────────────────────────────────────────
+//  Socket.IO setup 
 const io = new Server(server, {
   cors: { origin: '*', methods: ['GET', 'POST'] }
 });
@@ -30,7 +30,7 @@ const io = new Server(server, {
 // Make io accessible in routes
 app.set('io', io);
 
-// ─── Middleware ───────────────────────────────────────────────────
+// Middleware 
 app.use(helmet({ contentSecurityPolicy: false }));
 app.use(cors({ origin: '*' }));
 app.use(compression());
